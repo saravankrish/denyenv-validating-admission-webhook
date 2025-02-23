@@ -4,7 +4,7 @@ Kubernetes is a platform for running and managing application containers and has
 
 Another, less well known, set of extension points are the admission controllers. An admission controller is a piece of code that intercepts requests to the Kubernetes API prior to persistence of the object, but after the request is authenticated and authorized. Most admission controllers are built into Kubernetes and cover a range of functionality.
 
-To understand how admission controllers work you need to see them in action. Take the [namespace exists admission controller](https://kubernetes.io/docs/admin/admission-controllers/#namespaceexists) for example, it rejects all requests that attempt to create resources in a namespace that does not exist.
+To understand how admission controllers work you need to see them in action. Take the [namespace exists admission controller](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#namespaceexists) for example, it rejects all requests that attempt to create resources in a namespace that does not exist.
 
 If you were to list the active namespaces available to a new Kubernetes install you would see two or three namespaces including the `default` and `kube-system` namespaces. The `kube-system` namespace is where things like [Kubernetes DNS](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service) and the [Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/) live.
 
